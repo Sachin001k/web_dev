@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Complex Form</h2>
+    <form style="background-color: rgb(194, 194, 211)188, 188, 203);">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="Name" id="name">
+
+            <label for="email">Email ID:</label>
+            <input type="email" name="emailID" id="email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phoneNo" id="phone">
+
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+
+            <label for="gender">Gender:</label>
+
+            <input type="radio" name="Gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Gender" id="other">
+            <label for="other">Other</label>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Britain">Britain</option>
+            </select>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Address Street</legend>
+            <input type="text" id="city">
+            <label for="city">City</label>
+
+            <input type="text" id="state">
+            <label for="state">State</label>
+
+            <input type="num" name="ZipCode" id="zipcode">
+            <label for="zipcode">Zip Code</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <textarea name="comments" id="information"></textarea>
+            <label for="serviceCB">I agree to the terms of service</label>
+            <input type="checkbox" name="checkbox" id="serviceCB">
+            <br>
+            <label for="" > Comments</label>
+        </fieldset>
+        <input type="submit" value="Submit" id="">
+
+    </form>
+
+
+    <h3>Event Registration</h3>
+    <form style="background-color: aliceblue;">
+
+        
+        <br>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="fillName" id="name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="fillEmail" id="email" placeholder="Enter email here">
+        <br>
+        <br>
+
+        <label for="Phone">Contact Info:</label>
+        <br>
+        <input type="tel" name="fillPhoneNo." id="Phone">
+        <br>
+        
+        <br>
+        <label for="Occupation">Occupation:</label>
+        <br>
+        <select name="occupation" id="Occupation">
+            <option value="Student">STUDENT</option>
+            <option value="Staff">Teacher</option>
+            <option value="developer">Web Developer</option>
+            <option value="software"> Software Engineer</option>
+
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Topic of Interest</legend>
+            
+            <input type="checkbox" name="TopicInterest." id="interestTopic">
+            <label for="interestTopic">HTML</label>
+            <br>
+            <input type="checkbox" name="TopicInterest." id="css">
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" name="TopicInterest." id="javaScript">
+            <label for="javaScript">javaScript</label>
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Availability</legend>
+            <input type="radio" name="part-time" id="part_time">
+            <label for="part_time">Part-time</label>
+            <br>
+            <input type="radio" name="part-time" id="full_time">
+            <label for="full_time">Full-time</label>
+            <br>
+
+        </fieldset>
+       
+        <label for="comment">Comments:</label>
+        <br>
+        <textarea name="comments" id="comment" placeholder="write here" rows="5" cols="25"></textarea>
+        <input type="submit" name="register" id="Register" value="Register">
+        
+    </form>
+</body>
+</html>
