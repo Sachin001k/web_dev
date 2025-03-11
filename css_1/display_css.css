@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    height: 100px;
+    width: 200px;
+    border: 2px rebeccapurple solid;
+    margin-left: 40px;
+    margin-top: 5px;
+    padding: 30px;
+    /*display: block;*/
+    display: inline-block;
+}
+div{
+    background-color: aliceblue;
+    border: solid rebeccapurple 1px;
+    width: 250px;
+    height: 150px;
+    padding: 30px;
+    margin: 40px;
+}

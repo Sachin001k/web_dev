@@ -1,0 +1,74 @@
+h2,h1{
+    color:rgb(109, 84, 174);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(48, 4, 4);
+    border-top-left-radius: 5px;
+    width: 450px;
+    
+}
+p{
+    
+    background-color: blanchedalmond;
+    font-family: "Big Shoulders Stencil", sans-serif;
+    line-height: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(201, 22, 52);
+    width: 600px;
+}
+
+.articleClass{
+    color: rgb(50, 31, 69);
+    background-color: rgb(200, 211, 185);
+    font-style: italic;
+    font-size: 20px;
+    /*border: solid red 2px;
+    /*border-radius: 15px;*/
+    border-top-left-radius: 5px;
+    border-top:solid green 5px;
+    border: solid 5px;
+    width: 600px;
+    padding: 40px;
+    margin: 40px;
+    
+}
+#firstPara{
+    background-color: aqua;
+    color: rgb(21, 13, 8);
+    font-family: cursive;
+    font-size: larger;
+    border-bottom: 5px solid rgb(68, 68, 175);
+    width: 600px;
+    padding: 30px;
+    margin: 80px;
+}
+.span{
+    background-color: aliceblue;
+    color: blueviolet;
+    
+    border: 5px solid rgb(108, 50, 209);
+    border-radius: 5px;
+    
+    background: url(bg.gif) no repeat bottom right;
+    height: 30px;
+}
+#secondPara{
+    background-color: rgb(104, 104, 158);
+    color: rgb(93, 225, 93);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    width: 600px;
+    padding: 40px;
+}
+.secondClass{
+    background-color: rgb(212, 214, 216);
+    color: rgb(71, 71, 135);
+    font-family: monospace;
+    width: 600px;
+    padding: 30px;
+    
+    
+}
+
