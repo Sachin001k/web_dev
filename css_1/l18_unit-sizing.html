@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <link rel="shortcut icon" href="https://images.pexels.com/photos/24205231/pexels-photo-24205231/free-photo-of-portrait-of-a-woman-in-spring.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+    type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid rebeccapurple;
+            width: 20%;
+            margin: 10px;
+        }
+        .parent{
+            border: 2px solid red;
+            margin: 10px;
+            background-color: rgb(100, 211, 211);
+            width: 50%;
+        }
+        .child{
+            border: 2px solid green;
+            margin: 10px;
+            background-color: aquamarine;
+            width: 20%;
+        }
+        .container2{
+            border: 2px green solid;
+            background-color: rgb(211, 198, 223);
+            height: 100vh;
+            padding-top: 200px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            width: 50vw;
+            font-family: cursive;
+            font-size: 2em;
+        }
+        .container3{
+            border: solid 2px green;
+            background-color: blanchedalmond;
+            height: 5rem;
+            font-size: 2rem; 
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        Welcome to Web-Dev
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            This is child class
+        </div>
+    </div>
+    <div class="container2">
+        Welcome to IIT Bombay
+    </div>
+
+    <div class="container3">
+        Welcome to website
+    </div>
+</body>
+</html>

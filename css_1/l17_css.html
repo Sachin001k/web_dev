@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css positioning</title>
+    <link rel="shortcut icon" href="https://images.pexels.com/photos/30907486/pexels-photo-30907486/free-photo-of-spring-blossoms-against-clear-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+    type="image/x-icon">
+
+    <style>
+        img{
+            margin: 10px;
+        }
+        .container{
+            border: solid red 1px;
+            position: relative;
+            background-color: rgb(214, 199, 228);
+            box-sizing: border-box;
+            height: 4000px;
+        }
+        .image2{
+            position: relative;
+            top: 100px;
+            
+        }
+        .image3{
+            position: sticky;
+            top: 100px;
+        }
+        .image4{
+            position: fixed;
+        }
+        .box{
+            background-color: azure;
+            height: 1000px;
+            border: solid red 2px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/31048228/pexels-photo-31048228/free-photo-of-close-up-of-blooming-white-apple-blossoms.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+        alt="poster1" width="200px" height="300px" class="image1">
+
+        <img src="https://images.pexels.com/photos/31100856/pexels-photo-31100856/free-photo-of-close-up-of-vibrant-white-flower-blossoms.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+         alt="poster2" width="200px" height="300px" class="image2">
+         <img src="https://images.pexels.com/photos/12842817/pexels-photo-12842817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+         alt="poster 3" width="200px" height="300px" class="image3">
+
+         <img src="https://images.pexels.com/photos/16237456/pexels-photo-16237456/free-photo-of-wide-street-among-modern-skyscrapers-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+         width="200px"
+         height="300px" alt="poster4" class="image4">
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
