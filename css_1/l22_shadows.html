@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows</title>
+    <link
+      rel="shortcut icon"
+      href="https://images.unsplash.com/photo-1512911268383-f74e84ff8496?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      type="image/x-icon"
+    />
+
+    <style>
+      .container {
+        background-color: beige;
+        border: 3px solid black;
+        height: 600px;
+        display: flex;
+        margin: 5px;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        border: 2px solid blue;
+        width: 600px;
+        height: 250px;
+        flex-direction: row;
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 5px 7px 3px rebeccapurple;
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: linear;
+        transition-delay: 2s;
+      }
+      .box:hover{
+        background-color: rgb(163, 97, 224);
+        transform: scale(0.7);
+      }
+      h1 {
+        text-align: center;
+        text-shadow: 9px 8px 8px rgb(156, 18, 18), 9px 8px 4px greenyellow, 10px 12px 6px blue;
+      }
+      .box2{
+        border: 3px solid rgb(185, 43, 185);
+        margin: 5px;
+        padding: 5px;
+        width: 600px;
+        height: 250px;
+        box-shadow: 5px 8px 3px rgb(34, 10, 34), 7px 12px rgb(24, 200, 118);
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: linear;
+        transition-delay: 2s;
+        
+      }
+      .box2:hover{
+        background-color: rgb(236, 73, 73);
+        transform: scale(0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img
+          src="https://www.iitk.ac.in/new/images/page-images/logo/bluelog.jpg"
+          width="70px"
+          height="70px"
+        />
+        <h1>Welcome to IIT Kanpur</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          accusantium dolore voluptas est debitis similique dolorum eius odio
+          nulla maiores, iusto reprehenderit hic non consectetur? Sequi aut
+          doloremque veniam nulla!
+        </p>
+      </div>
+      <div class="box2">
+        <h1>Aerospace Engineering</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sunt
+          maxime fuga laudantium hic laboriosam architecto. Ipsa, ipsam unde ex
+          expedita minima quasi obcaecati, nisi dolorum temporibus sapiente
+          facilis! Mollitia!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
