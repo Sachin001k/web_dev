@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <title>Media Query</title>
+
+    <style>
+      /*
+        .box{
+            background-color: rgb(95, 151, 200);
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+        /*
+        @media (min-width:600px) {
+            .box{
+                background-color: blueviolet;
+            }
+        }
+        @media(max-width:300px){
+            .box{
+                background-color: brown;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px){
+            .box{
+                background-color: rgb(187, 21, 21);
+            }
+        }
+        */
+      .container {
+        background-color: bisque;
+        height: 550px;
+        width: 600px;
+        border: 3px solid black;
+        display: flex;
+        margin: 3px;
+        padding: 5px;
+      }
+      #boxleft {
+        background-color: blueviolet;
+        width: 400px;
+        border: solid 2px green;
+        margin: 3px;
+        padding: 5px;
+      }
+      #boxright {
+        background-color: yellow;
+        width: 400px;
+        border: 2px solid red;
+        padding: 5px;
+        margin: 3px;
+      }
+      p {
+        border: 1px solid rgb(255, 0, 0);
+      }
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="boxleft">
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+      </div>
+
+      <div id="boxright">
+        <img
+          src="https://imgs.search.brave.com/w3Wf9VxPFon87_e2QkaIAT6Rxe02z58QAfmRFR0jM20/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb21i/by5zdGF0aWNmbGlj/a3IuY29tLzY2YTAz/MWY5ZmMzNDNjNWU0/MmQ5NjVjYS82NmEz/ZTI2M2Q1MmIwMWU3/NDNhNzRmMzRfcGhv/dG8tMy1obS5hdmlm"
+          alt="image1"
+          width="300px"
+          height="200px"
+        />
+      </div>
+    </div>
+  </body>
+</html>
