@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Design</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/5esFnq7a4cVA8p-KR2RjkcUzepSxFeXkGLUcp5DexLE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXQuY29t/L3cvZnVsbC83Lzgv/OC8yMTE3ODUwLTM4/NDB4MjE2MC1kZXNr/dG9wLTRrLWRhcmst/YmFja2dyb3VuZC5q/cGc" 
+    type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            padding: 2rem;
+            background-color: rgb(118, 142, 186);
+            display: grid;
+            gap: 1rem;
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 440px));
+            justify-content: center;
+        }
+        .item{
+            padding: 1rem;
+            border: solid 2px rgb(36, 24, 24);
+            background-color: rgb(104, 27, 181);
+            color: rgb(244, 233, 233);
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <!-- <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+        <div class="item">P</div> -->
+    </div>
+</body>
+</html>

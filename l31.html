@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Template-Area</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            padding: 2rem;
+            background-color: rgb(89, 132, 132);
+            gap: 1rem;
+            grid-template-areas: 
+            "header header header"
+            "sidebar content1 content1"
+            "sidebar content2 content3"
+            "footer footer footer"
+            ;
+        }
+        .item{
+            background-color: rgb(207, 184, 201);
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            border: 1px solid rgb(100, 1, 1)
+        }
+
+        #header{
+            grid-area: header;
+        }
+        #sideBar{
+            grid-area: sidebar;
+        }
+        #content1{
+            grid-area: content1;
+        }
+        #content2{
+            grid-area: content2;
+        }
+        #content3{
+            grid-area: content3;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="header">Header</div>
+        <div class="item" id="sideBar">SideBar</div>
+        <div class="item" id="content1">Content1</div>
+        <div class="item" id="content2">Content2</div>
+        <div class="item" id="content3">content3</div>
+        <div class="item" id="footer">Footer</div>
+        <!-- <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div> -->
+    </div>
+</body>
+</html>
