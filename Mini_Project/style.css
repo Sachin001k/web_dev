@@ -1,0 +1,66 @@
+
+body{
+    margin: 0;
+    background-color: rgb(119, 104, 132);
+    color:azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    background-color: rgb(40, 6, 67);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+    /* margin-top: 1rem; */
+}
+
+h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+#countDown{
+    display: flex;
+    justify-content: space-around;
+}
+
+#countDown div{
+    padding: 20px;
+    text-align: center;
+    background:rgb(201, 197, 205);
+    border-radius: 5px;
+    
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    font-size: xx-large;
+}
+.progress-container{
+    background: whitesmoke;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+    overflow: hidden;
+}
+
+#progress-bar{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(138, 173, 67);
+    transition: width 1s ease-in-out;
+    border-radius: 3px;
+}
