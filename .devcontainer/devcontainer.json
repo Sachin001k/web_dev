@@ -1,0 +1,61 @@
+{
+  "name": "Web Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "ms-vscode.live-server",
+        "ritwickdey.liveserver",
+        "ecmel.vscode-html-css",
+        "pranaygp.vscode-css-peek",
+        "zignd.html-css-class-completion",
+        "ms-vscode.vscode-json",
+        "christian-kohler.path-intellisense",
+        "ms-vscode-remote.remote-containers"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "liveServer.settings.port": 5505,
+        "emmet.includeLanguages": {
+          "javascript": "javascriptreact"
+        }
+      }
+    }
+  },
+
+  "forwardPorts": [3000, 5173, 5505, 8080],
+  "portsAttributes": {
+    "3000": {
+      "label": "React Development Server",
+      "onAutoForward": "notify"
+    },
+    "5173": {
+      "label": "Vite Development Server", 
+      "onAutoForward": "notify"
+    },
+    "5505": {
+      "label": "Live Server",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "Development Server",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "postCreateCommand": "npm install -g live-server && echo 'Development environment ready!'",
+
+  "remoteUser": "node"
+}
